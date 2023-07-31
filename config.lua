@@ -127,3 +127,23 @@ lvim.builtin.breadcrumbs.options.separator = " > "
 lvim.plugins = {
   { "ellisonleao/gruvbox.nvim", priority = 1000 },
 }
+
+---------------  ls:re  --------------------------
+vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "pyright" })
+-- configure pyright server
+require("lspconfig")["pyright"].setup({
+	settings = {
+		pyright = {
+			autoImportCompletion = true,
+			python = {
+				analysis = {
+					autoSearchPaths = true,
+					useLibraryCodeForTypes = true,
+				},
+			},
+		},
+	},
+	root_dir = function()
+		return vim.fn.getcwd()
+	end,
+})
