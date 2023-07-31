@@ -252,8 +252,7 @@ lvim.builtin.bufferline.options.hover.delay = 200
 lvim.builtin.bufferline.options.hover.enabled = false
 lvim.builtin.bufferline.options.hover.reveal["1"] = "close"
 lvim.builtin.bufferline.options.indicator.icon = "▎"
-lvim.builtin.bufferline.options.indicator.style = "icon"
-lvim.builtin.bufferline.options.left_mouse_command = "buffer %d"
+lvim.builtin.bufferline.options.indicator.style = "icon" lvim.builtin.bufferline.options.left_mouse_command = "buffer %d"
 lvim.builtin.bufferline.options.left_trunc_marker = ""
 lvim.builtin.bufferline.options.max_name_length = 18
 lvim.builtin.bufferline.options.max_prefix_length = 15
@@ -738,7 +737,6 @@ lvim.builtin.nvimtree.setup.view.number = false
 lvim.builtin.nvimtree.setup.view.preserve_window_proportions = false
 lvim.builtin.nvimtree.setup.view.relativenumber = false
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.view.signcolumn = "yes"
 lvim.builtin.nvimtree.setup.view.width = 30
 lvim.builtin.project.active = true
 lvim.builtin.project.datapath = "/home/evfomoney/.cache/lvim"
